@@ -16,12 +16,12 @@ function Index(props) {
   const loading = () => {};
 
   return (
-    <>
+    <div className ="headercontainer">
       {props.goals ? loaded() : loading()}
       <Link to="/newgoal">
         <button>New Goal</button>
       </Link>
-    </>
+    </div>
   );
 }
 

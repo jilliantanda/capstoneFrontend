@@ -29,7 +29,7 @@ const Form = (props) => {
         <input
           type="text"
           value={newForm.title}
-          name="name"
+          name="title"
           placeholder="Title"
           onChange={handleChange}
         />
@@ -56,6 +56,11 @@ const Form = (props) => {
           name="active"
           placeholder="active"
           onChange={handleChange}
+        />
+         <input
+          type="submit"
+          value="Add Goal"
+          className="button-text"
         />
         </form>
     </div>

@@ -1,16 +1,33 @@
 import { Link } from "react-router-dom";
 
-const Header = (props) => {
-  return (
-    <nav className="nav">
-    <h1> header component </h1>
-      <Link to="/goals">
-        <div className="title-text">
-          <span>Coding Goals</span>
+const Header = (props) => {  return (
 
+    <div>
+
+      <nav>
+        <div class="nav-wrapper">
+      
+
+          <ul id="nav-mobile" class="right">
+            <li>
+              <a href="/">Logo</a>
+            </li>
+            <li>|</li>
+            <li>
+              <a href="/goals">Goals</a>
+            </li>
+            <li>|</li>
+            <li>
+              <a href="/newgoal">New Goal</a>
+            </li>
+            <li>|</li>
+            <li>
+              <a href="collapsible.html">Resources</a>
+            </li>
+          </ul>
         </div>
-      </Link>
-    </nav>
+      </nav>
+    </div>
   );
 };
 

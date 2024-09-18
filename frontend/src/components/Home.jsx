@@ -4,13 +4,14 @@ import Index from "../pages/Index.jsx";
 import Show from "../pages/Show.jsx";
 import Form from "./Form";
 
+
 const Home = (props) => {
   const [goals, setGoals] = useState(null);
   const URL = "http://localhost:4000/goals/";
 
   const getGoals = async () => {
     try {
-      const response = await response.json();
+      const response = await fetch(URL);
       const data = await response.json();
       setGoals(data.data);
     } catch (error) {
@@ -53,6 +54,10 @@ const Home = (props) => {
 
   return (
     <main>
+      <h1> DisArray </h1>
+      <h3>learn.solve.grow</h3>
+      <div className="description">
+      <h5>Dedicate the time to enhance your skills in software development. Set realistic goals, learn new skills, solve difficult problems, grow as a developer.</h5></div>
       <Routes>
         <Route path="/goals" element={<Index goals={goals} />} />
         <Route path="/newgoal" element={<Form createGoal={createGoal} />} />
@@ -67,7 +72,7 @@ const Home = (props) => {
           }
         />
       </Routes>
-      <h1> Home Component </h1>
+      
     </main>
   );
 };

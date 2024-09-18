@@ -21,14 +21,39 @@ const Show = (props) => {
         navigate("/goals");
       };
     
-      const removeGoal = (e) => {
-        e.preventDefault()
-        props.deleteGoal(goal._id);
-        navigate("/goals");
-      };
+      // const removeGoal = (e) => {
+      //   e.preventDefault()
+      //   props.deleteGoal(goal._id);
+      //   navigate("/goals");
+      // };
     
     return (
+
+      <div className="goal-detail">
+      <h1>{goal.title}</h1>
+      <h3>Description: {goal.description}</h3>
+      <h3>Resources: {goal.resources}</h3>
     <h1> Show Component</h1>
+    <form onSubmit={handleSubmit}>
+    Description:{" "}
+    <input
+      type="text"
+      value={editForm.description}
+      name="description"
+      placeholder="Description"
+      onChange={handleChange}
+    />
+    Resources:
+    <input
+      type="text"
+      value={editForm.resources}
+      name="resources"
+      placeholder="Resources"
+      onChange={handleChange}
+    />
+    <input type="submit" value="Update Goal" />
+  </form>
+  </div>
     )
 }
 
