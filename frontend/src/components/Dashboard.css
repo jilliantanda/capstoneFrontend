@@ -1,0 +1,14 @@
+h1, h3{
+    display: flex;
+    padding-left: 10%;
+    justify-content: left;
+  }
+  
+  .description{
+    padding-left: 10%;
+    display: flex;
+    max-width: 35%;
+    text-align: left;
+  
+  }
+  

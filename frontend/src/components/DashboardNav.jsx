@@ -3,8 +3,10 @@ const DashNav = (props) => {  return (
     <div>
       <nav
         style={{backgroundColor:"grey", color:"white"}}>
-        <div class="nav-wrapper">
-          <ul id="nav-mobile" class="right">
+          
+         <div class="nav-wrapper">
+        <a href="/" style={{display:"flex", marginLeft:"25px"}} class="brand-logo"> [ ]  </a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li>
               <a href="/features" style={{marginLeft:"25px", marginRight:"25px"}}>Features</a>
             </li>

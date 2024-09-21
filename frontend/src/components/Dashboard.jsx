@@ -1,4 +1,5 @@
 import DashNav from "./DashboardNav";
+import "./Dashboard.css"
 
 const Dashboard = (props) => {
   return (

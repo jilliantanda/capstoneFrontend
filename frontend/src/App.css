@@ -3,25 +3,4 @@
   margin: 0;
   text-align: center;
 }
-.nav-wrapper{
-display: flex;
-justify-content: space-around;
-justify-content: flex-end;
-font-size:large;
-}
 
-h1, h3{
-  display: flex;
-  padding-left: 10%;
-  justify-content: left;
-}
-
-
-
-.description{
-  padding-left: 10%;
-  display: flex;
-  max-width: 35%;
-  text-align: left;
-
-}
