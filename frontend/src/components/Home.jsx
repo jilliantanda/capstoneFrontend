@@ -3,6 +3,10 @@ import { Route, Routes } from "react-router-dom";
 import Index from "../pages/Index.jsx";
 import Show from "../pages/Show.jsx";
 import Form from "./Form";
+import Dashboard from "./Dashboard.jsx"
+import Features from "./Features.jsx";
+import About from "./About.jsx";
+import LearnMore from "./LearnMore.jsx";
 
 
 const Home = (props) => {
@@ -54,11 +58,13 @@ const Home = (props) => {
 
   return (
     <main>
-      <h1> DisArray </h1>
-      <h3>learn.solve.grow</h3>
-      <div className="description">
-      <h5>Dedicate the time to enhance your skills in software development. Set realistic goals, learn new skills, solve difficult problems, grow as a developer.</h5></div>
       <Routes>
+        <Route path="/" element={<Dashboard/>} />
+        <Route path="/features" element={<Features/>} />
+        <Route path="/about" element={<About/>} />
+        <Route path="/learnmore" element={<LearnMore/>} />
+
+        {/* <Route path="/resources" element={<Resources/> } /> */}
         <Route path="/goals" element={<Index goals={goals} />} />
         <Route path="/newgoal" element={<Form createGoal={createGoal} />} />
         <Route
@@ -72,7 +78,7 @@ const Home = (props) => {
           }
         />
       </Routes>
-      
+  
     </main>
   );
 };

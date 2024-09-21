@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./Form.css"
 
 const Form = (props) => {
   const [newForm, setNewForm] = useState({
@@ -50,13 +51,14 @@ const Form = (props) => {
           onChange={handleChange}
         />
         Active?:
-        <input
-          type="Boolean"
-          value={newForm.active}
+        <input 
+          style={{opacity: "1", position:"relative", pointerEvents:"visible", marginLeft:"10px"}}
+          type="checkbox"
+          // value={newForm.active}
           name="active"
-          placeholder="active"
           onChange={handleChange}
         />
+        <br></br>
          <input
           type="submit"
           value="Add Goal"
