@@ -1,5 +1,7 @@
 import DashNav from "./DashboardNav";
 import "./Dashboard.css"
+import SignUp from "./Signup";
+import FormPropsTextFields from "./Signup";
 
 const Dashboard = (props) => {
   return (
@@ -30,6 +32,7 @@ const Dashboard = (props) => {
           developer.
         </h5>
       </div>
+
     </div>
   );
 };

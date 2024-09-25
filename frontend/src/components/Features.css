@@ -13,15 +13,17 @@ padding: 0;
 .icons{
     display: flex;
     width: 100%;
-    justify-content: space-around;
+    gap:30%;
     padding-top: 5%;
-
+    justify-content: center;
 }
 
 .content{
     display: flex;
     width: 100%;
-    justify-content: space-around;
+    padding-left: 7%;
+    gap:20%;
+    justify-content: center;
 
     
 }

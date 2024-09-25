@@ -31,10 +31,11 @@ const Features = (props) => {
     <div className="div1">
     <h1>Staying Focused isn't always easy</h1>
     <p>In the world of software development, things are always evolving. It may seem daunting to dive into. DisArray will help you stay motivated, learn at your own pace, and connect you with all the resources for the success in what you want to expand on!</p>
+    
     </div>
 
     </div>
-     <img src="https://i.pinimg.com/736x/e1/81/3d/e1813d70dd87c95b5a746cecb35382ff.jpg" width="35%"></img>     
+     <img src="https://i.pinimg.com/736x/a4/d8/ec/a4d8eccab217762fdd7af943876219ac.jpg" width="35%"></img>     
     </>
   );
 };
