@@ -1,0 +1,16 @@
+.about{
+    margin: auto;
+    max-width: 70%;
+    text-align: left;
+    padding-top: 3%;
+}
+
+
+p{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  padding-top: 5%;
+  font-size: 1.4em;
+  max-width: 50%;
+}

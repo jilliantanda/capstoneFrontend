@@ -4,7 +4,7 @@
 import "./App.css";
 import Home from "./components/Home";
 import { Route, Routes } from "react-router-dom";
-
+import Header from "./pages/Header";
 function App() {
   // const [count, setCount] = useState(0);
 

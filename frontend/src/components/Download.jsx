@@ -1,11 +1,13 @@
 import DashNav from "./DashboardNav";
-import FormPropsTextFields from "./Signup";
 import LoginSignup from "./Signup";
+
 const Download = (props) => {
     return (
          <>
          {<DashNav/>}
-        <h1>Create an account</h1>
+         <div className="title">
+        <h1>Create an Account</h1>
+        </div>
         {<LoginSignup/>}
         </>
     )

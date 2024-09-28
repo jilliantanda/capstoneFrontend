@@ -1,18 +1,9 @@
-.container {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    margin-top: 5%;
-    max-width: 40%;
-    border-radius: 10px;
-    background-color: rgba(128, 128, 128, 0.282);
-}
-
-.header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 9px;
-    width: 100%;
-    margin-top: 10%;
+.signup {
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+  background-color: rgba(183, 183, 183, 0.561);
+  max-width: fit-content;
+  margin: auto;
+  margin-top:5%;
 }

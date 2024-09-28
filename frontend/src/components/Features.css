@@ -1,43 +1,35 @@
-h1{
-display: flex;
-justify-content:center;
-padding: 0;
-}
-.contentdiv{
-    display: flex;
-    flex-direction:column;
-    max-width: 70%;
-    margin: auto;
+
+.title {
+  padding-top: 2%;
+  justify-content: center;
+  margin: 0;
 }
 
-.icons{
-    display: flex;
-    width: 100%;
-    gap:30%;
-    padding-top: 5%;
-    justify-content: center;
+.contentdiv {
+  display: flex;
+  flex-direction: row;
+  max-width: 80%;
+  margin: auto;
+  padding: 5%;
 }
 
-.content{
-    display: flex;
-    width: 100%;
-    padding-left: 7%;
-    gap:20%;
-    justify-content: center;
-
-    
-}
-.info{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-
+.section2 {
+  padding-left: 7%;
+  padding-right: 7%;
 }
 
-.div1{
-    background-color: rgba(255, 255, 255, 0.139);
-    padding-top: 5%;
-max-width: 50%;
-text-align: left;
+.div1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5%;
+  padding: 5%;
+  padding-left: 10%;
+  max-width: 100%;
+  background-color: rgba(163, 163, 163, 0.2);
+  text-align: left;
 }
 
+.div2 {
+  max-width: 35%;
+}

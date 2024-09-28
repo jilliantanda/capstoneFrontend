@@ -1,63 +1,69 @@
 import { useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import "./Show.css";
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
 
 
 const Show = (props) => {
-    const params = useParams()
-    const navigate = useNavigate()
-    const id = params.id;
-    const goals = props.goals;
-    const goal = goals.find((p) => p._id === id);
-    const [editForm, setEditForm ] = useState(goal);
+  const params = useParams();
+  const navigate = useNavigate();
+  const id = params.id;
+  const goals = props.goals;
+  const goal = goals.find((p) => p._id === id);
+  const [editForm, setEditForm] = useState(goal);
 
-    const handleChange = (event) => {
-        setEditForm({ ...editForm, [event.target.name]: event.target.value });
-      };
-    
-      const handleSubmit = (event) => {
-        event.preventDefault();
-        props.updateGoals(editForm, goal._id);
-        navigate("/goals");
-      };
-    
-      const removeGoal = (e) => {
-        e.preventDefault()
-        props.deleteGoal(goal._id);
-        navigate("/goals");
-      };
-    
-    return (
+  const handleChange = (event) => {
+    setEditForm({ ...editForm, [event.target.name]: event.target.value });
+  };
 
-      <div className="goal-detail">
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    props.updateGoals(editForm, goal._id);
+    navigate("/goals");
+  };
+
+  const removeGoal = (e) => {
+    e.preventDefault();
+    props.deleteGoals(goal._id);
+    navigate("/goals");
+  };
+
+  return (
+    <>
       <h3>Goal: {goal.title}</h3>
       <h3>Description: {goal.description}</h3>
       <h3>Resources: {goal.resources}</h3>
-  {/* CREATE EDIT BUTTON FOR EDIT FORM ON SEP. PAGE */}
-    <button id="delete" onClick={removeGoal}>
-        DELETE
-      </button>
-    <form onSubmit={handleSubmit}>
-    Description:
-    <input
-      type="text"
-      value={editForm.description}
-      name="description"
-      placeholder="Description"
-      onChange={handleChange}
-    />
-    Resources:
-    <input
-      type="text"
-      value={editForm.resources}
-      name="resources"
-      placeholder="Resources"
-      onChange={handleChange}
-    />
-    <input type="submit" value="Update Goal" />
-  </form>
-  </div>
-    )
-}
 
-export default Show
+      <Form onSubmit={handleSubmit}>
+        Description:
+        <Form.Control
+          size="lg"
+          type="text"
+          placeholder="Description"
+          value={editForm.description}
+          name="description"
+          onChange={handleChange}
+        />
+        Resources:
+        <Form.Control
+          size="lg"
+          type="text"
+          value={editForm.resources}
+          name="resources"
+          placeholder="Resources"
+          onChange={handleChange}
+        />
+        <Button variant="secondary" size="lg" as="input" type="submit" value="Update Goal" />
+        <br></br>
+        <Button variant="secondary" size="lg" as="input" type="submit" onClick={removeGoal} value="Remove Goal" />
+        {/* CREATE EDIT BUTTON FOR EDIT FORM ON SEP. PAGE */}
+        {/* <button id="delete" onClick={removeGoal}>
+          DELETE
+        </button> */}
+      </Form>
+    </>
+  );
+};
+
+export default Show;
