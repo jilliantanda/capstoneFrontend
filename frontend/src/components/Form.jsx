@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useNavigate } from "react";
 import "./Form.css"
 
 const Form = (props) => {
@@ -39,25 +39,25 @@ const Form = (props) => {
           type="text"
           value={newForm.description}
           name="description"
-          placeholder="description"
+          placeholder="Description"
           onChange={handleChange}
         />
         Resources:
         <input
           type="text"
-          value={newForm.description}
-          name="description"
-          placeholder="description"
+          value={newForm.resources}
+          name="resources"
+          placeholder="Resources"
           onChange={handleChange}
         />
-        Active?:
-        <input 
+        {/* Active?: */}
+        {/* <input 
           style={{opacity: "1", position:"relative", pointerEvents:"visible", marginLeft:"10px"}}
           type="checkbox"
           // value={newForm.active}
           name="active"
           onChange={handleChange}
-        />
+        /> */}
         <br></br>
          <input
           type="submit"

@@ -21,21 +21,24 @@ const Show = (props) => {
         navigate("/goals");
       };
     
-      // const removeGoal = (e) => {
-      //   e.preventDefault()
-      //   props.deleteGoal(goal._id);
-      //   navigate("/goals");
-      // };
+      const removeGoal = (e) => {
+        e.preventDefault()
+        props.deleteGoal(goal._id);
+        navigate("/goals");
+      };
     
     return (
 
       <div className="goal-detail">
-      <h1>{goal.title}</h1>
+      <h3>Goal: {goal.title}</h3>
       <h3>Description: {goal.description}</h3>
       <h3>Resources: {goal.resources}</h3>
-    <h1> Show Component</h1>
+  {/* CREATE EDIT BUTTON FOR EDIT FORM ON SEP. PAGE */}
+    <button id="delete" onClick={removeGoal}>
+        DELETE
+      </button>
     <form onSubmit={handleSubmit}>
-    Description:{" "}
+    Description:
     <input
       type="text"
       value={editForm.description}

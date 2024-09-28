@@ -5,7 +5,7 @@ const Download = (props) => {
     return (
          <>
          {<DashNav/>}
-        <h1>Download page</h1>
+        <h1>Create an account</h1>
         {<LoginSignup/>}
         </>
     )

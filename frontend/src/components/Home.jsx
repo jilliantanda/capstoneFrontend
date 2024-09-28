@@ -70,7 +70,7 @@ const Home = (props) => {
         <Route path="/goals" element={<Index goals={goals} />} />
         <Route path="/newgoal" element={<Form createGoal={createGoal} />} />
         <Route
-          path="/goal/:id"
+          path="/goals/:id"
           element={
             <Show
               goals={goals}
