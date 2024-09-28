@@ -33,9 +33,11 @@ const Features = (props) => {
     <p>In the world of software development, things are always evolving. It may seem daunting to dive into. DisArray will help you stay motivated, learn at your own pace, and connect you with all the resources for the success in what you want to expand on!</p>
     
     </div>
-
-    </div>
+ <div>
      <img src="https://i.pinimg.com/736x/a4/d8/ec/a4d8eccab217762fdd7af943876219ac.jpg" width="35%"></img>     
+     </div>
+    </div>
+   
     </>
   );
 };
