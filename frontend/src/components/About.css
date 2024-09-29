@@ -32,9 +32,11 @@
 }
 
 .about4{ 
-    padding-top:5%;
-    padding-left:2%; padding-right: 2%;
+    display: flex;
+    padding-left:2%; 
+    padding-right: 2%;
     max-width: 50%;
+    align-items: center;
     text-align: center;
     background-color: rgba(179, 175, 175, 0.243);
 }

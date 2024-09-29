@@ -8,7 +8,9 @@ function DashNav() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="/">DisArray [ ]</Navbar.Brand>
+        <Navbar.Brand href="/">
+          <img src="https://i.imgur.com/JKuHfyG.png" />
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">

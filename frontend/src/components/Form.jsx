@@ -1,5 +1,5 @@
 import { useState, useNavigate } from "react";
-import "./Form.css"
+import "./Form.css";
 
 const Form = (props) => {
   const [newForm, setNewForm] = useState({
@@ -25,8 +25,8 @@ const Form = (props) => {
   };
   return (
     <div>
-        <h1 className="form-header"> New Goal:</h1>
-        <form onSubmit={handleSubmit} className="add-player-form">
+      <h1 className="form-header"> New Goal:</h1>
+      <form onSubmit={handleSubmit} className="add-player-form">
         <input
           type="text"
           value={newForm.title}
@@ -59,15 +59,10 @@ const Form = (props) => {
           onChange={handleChange}
         /> */}
         <br></br>
-         <input
-          type="submit"
-          value="Add Goal"
-          className="button-text"
-        />
-        </form>
+        <input type="submit" value="Add Goal" className="button-text" />
+      </form>
     </div>
-  )
+  );
 };
-
 
 export default Form;

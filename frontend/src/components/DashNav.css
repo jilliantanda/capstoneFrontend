@@ -1,20 +1,18 @@
-.container{
-    display: flex;
-    margin: 0;
-    max-width: 100%;
-    border-radius: 0;
-    padding: .85%;
-    font-size: large;
-
+.container {
+  display: flex;
+  margin: 0;
+  max-width: 100%;
+  border-radius: 0;
+  padding: 0.85%;
+  font-size: large;
 }
 
-.navbar>.container{
-    display: flex;
-    flex-direction: row;
-    margin: 0;
- 
+.navbar > .container {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
 }
 
-.bg-body-tertiary{
-    padding-top: 0;
+.bg-body-tertiary {
+  padding-top: 0;
 }

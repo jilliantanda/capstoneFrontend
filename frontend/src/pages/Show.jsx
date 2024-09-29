@@ -4,7 +4,6 @@ import "./Show.css";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 
-
 const Show = (props) => {
   const params = useParams();
   const navigate = useNavigate();
@@ -54,9 +53,22 @@ const Show = (props) => {
           placeholder="Resources"
           onChange={handleChange}
         />
-        <Button variant="secondary" size="lg" as="input" type="submit" value="Update Goal" />
+        <Button
+          variant="secondary"
+          size="lg"
+          as="input"
+          type="submit"
+          value="Update Goal"
+        />
         <br></br>
-        <Button variant="secondary" size="lg" as="input" type="submit" onClick={removeGoal} value="Remove Goal" />
+        <Button
+          variant="secondary"
+          size="lg"
+          as="input"
+          type="submit"
+          onClick={removeGoal}
+          value="Remove Goal"
+        />
         {/* CREATE EDIT BUTTON FOR EDIT FORM ON SEP. PAGE */}
         {/* <button id="delete" onClick={removeGoal}>
           DELETE

@@ -1,9 +1,10 @@
 .signup {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  padding: 5%;
+  padding: 3%;
   background-color: rgba(183, 183, 183, 0.561);
   max-width: fit-content;
   margin: auto;
-  margin-top:5%;
+  margin-top: 5%;
 }

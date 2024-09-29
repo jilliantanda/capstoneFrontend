@@ -3,12 +3,11 @@ import { Route, Routes } from "react-router-dom";
 import Index from "../pages/Index.jsx";
 import Show from "../pages/Show.jsx";
 import Form from "./Form";
-import Dashboard from "./Dashboard.jsx"
+import Dashboard from "./Dashboard.jsx";
 import Features from "./Features.jsx";
 import About from "./About.jsx";
 import LearnMore from "./LearnMore.jsx";
 import Download from "./Download.jsx";
-
 
 const Home = (props) => {
   const [goals, setGoals] = useState(null);
@@ -60,11 +59,11 @@ const Home = (props) => {
   return (
     <main>
       <Routes>
-        <Route path="/" element={<Dashboard/>} />
-        <Route path="/features" element={<Features/>} />
-        <Route path="/about" element={<About/>} />
-        <Route path="/learnmore" element={<LearnMore/>} />
-        <Route path="/download" element={<Download/>} />
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/features" element={<Features />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/learnmore" element={<LearnMore />} />
+        <Route path="/download" element={<Download />} />
 
         {/* <Route path="/resources" element={<Resources/> } /> */}
         <Route path="/goals" element={<Index goals={goals} />} />
@@ -80,7 +79,6 @@ const Home = (props) => {
           }
         />
       </Routes>
-  
     </main>
   );
 };

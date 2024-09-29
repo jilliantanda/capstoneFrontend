@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import Header from "./Header"
-
-
+import Header from "./Header";
 
 function Index(props) {
   const loaded = () => {
@@ -12,7 +10,6 @@ function Index(props) {
           <h3>{goal.title}</h3>
         </Link>
         <img src={goal.image} alt={goal.name} />
-
       </div>
     ));
   };
@@ -22,7 +19,7 @@ function Index(props) {
     <>
       {props.goals ? loaded() : loading()}
       <Link to="/newgoal">
-          <button>New Goal</button>
+        <button>New Goal</button>
       </Link>
     </>
   );
