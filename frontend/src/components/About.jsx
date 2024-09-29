@@ -13,25 +13,30 @@ const About = (props) => {
             width="30%"
             height="30%"
           ></img>
-
+<div className="about4">
           <p>
             Welcome to DisAarray, your all-in-one productivity tool designed to
             help you set and achieve your goals while staying on top of industry
             best practices and emerging technologies.{" "}
           </p>
+          </div>
         </div>
 
         <div className="about5">
-          <p>
+            <div className="about6">
+     <p>
             Whether you're a professional aiming to sharpen your skills, a
             student navigating the learning curve, or a team looking to
             streamline workflows, DisArray provides the organization and insight
             you need to thrive.
           </p>
-        </div>
-<div className="images">
+          </div>
+    <div className="images">
+         
     {<CarouselImages />}
-</div>
+</div>      
+        </div>
+
         <div className="about2">
           <p>
             <b>What We Offer: </b>
