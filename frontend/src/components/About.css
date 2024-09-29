@@ -1,7 +1,7 @@
 .about{
     display: flex;
-flex-direction: column;   
- margin: auto;
+    flex-direction: column;   
+    margin: auto;
     max-width: 70%;
     text-align: left;
     padding-top: 3%;
@@ -12,7 +12,7 @@ flex-direction: column;
     display: flex;
     flex-direction: row;
     gap: 10%;
-    max-width: 95%;
+    /* max-width: 95%; */
 }
 .about1, .about2, .about3, .about5 {
   padding-top: 5%;
@@ -21,5 +21,19 @@ flex-direction: column;
 
 .about2{
     display: flex;
+    gap: 5%;
     justify-content: right;
+}
+.about3{
+    padding-bottom: 10%;
+}
+.about5{
+    padding-bottom: 3%;
+}
+
+.images{
+    display: flex;
+    margin: auto;
+    max-width: 80%;
+    padding-bottom: 1%;
 }
