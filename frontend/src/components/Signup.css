@@ -1,4 +1,27 @@
+
+.logcontainer{
+  display: flex;
+  flex-direction: row;
+  max-width: 50%;
+  margin-left:25%;
+}
+
+
 .signup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3%;
+  background-color: rgba(183, 183, 183, 0.561);
+  max-width: fit-content;
+  margin: auto;
+  margin-top: 3%;
+  border-style: groove;
+  border-color: rgba(214, 214, 214, 0.581);
+  border-radius: 5%;
+}
+
+.signin{
   display: flex;
   flex-direction: column;
   justify-content: center;
