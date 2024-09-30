@@ -1,5 +1,5 @@
 import "./Dashboard.css";
-
+import Button from "react-bootstrap/Button";
 import DashNav from "./DashboardNav";
 
 const Dashboard = (props) => {
@@ -11,7 +11,6 @@ const Dashboard = (props) => {
         <div className="grid-item">
           <img src="https://i.imgur.com/82HHqL5.png"></img>
         </div>
-
         <div className="grid-item">
           <img src="https://i.imgur.com/Ytoa5xQ.gif"></img>
         </div>
@@ -24,6 +23,15 @@ const Dashboard = (props) => {
             Set realistic goals, learn new skills, solve difficult problems,
             grow as a developer.
           </h5>
+<br></br>
+          <div classname="btns">
+            <Button href="/download" variant="secondary" size="med">
+            Sign Up
+            </Button>{" "}
+            <Button variant="secondary" size="med">
+              Log In
+            </Button>
+          </div>
         </div>
       </div>
 

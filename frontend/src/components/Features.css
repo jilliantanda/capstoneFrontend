@@ -2,6 +2,7 @@
   padding-top: 2%;
   justify-content: center;
   margin: 0;
+  padding-bottom: 2%;
 }
 
 .contentdiv {
@@ -10,25 +11,34 @@
   max-width: 80%;
   margin: auto;
   padding: 5%;
+  border-color: rgba(135, 135, 135, 0.45);
+  border-style: groove;
 }
+
 
 .section2 {
   padding-left: 7%;
   padding-right: 7%;
+
 }
 
 .div1 {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin: 5%;
   padding: 5%;
-  padding-left: 10%;
-  max-width: 100%;
-  background-color: rgba(179, 175, 175, 0.243);
+  margin-left: 10%;
+  gap: 7%;
+  max-width: 80%;
+  background-color: rgb(212, 212, 212);
   text-align: left;
 }
 
 .div2 {
   max-width: 35%;
+}
+
+.div2>p{
+  font-size: 1.3em;
 }
