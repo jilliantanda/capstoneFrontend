@@ -24,7 +24,7 @@ const LoginSignup = () => {
         </Form.Group>
         <Form.Group className="mb-4" controlId="formBasicPassword">
           <Form.Label>Confirm Password</Form.Label>
-          <Form.Control size="lg" type="password" placeholder="..." />
+          <Form.Control size="lg" type="password" placeholder="Confirm Password" />
         </Form.Group>
         {/* <Form.Group className="mb-3" controlId="formBasicCheckbox">
             <Form.Check type="checkbox" label="Check me out" />

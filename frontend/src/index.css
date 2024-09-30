@@ -16,24 +16,34 @@ body {
   font-style: normal;
 }
 
+.goalpage{
+  display: flex;
+  flex-direction: column;
+  padding-left: 20%;
+  align-items: left;
+  background-color: rgba(183, 183, 183, 0);
+  padding-top: 5%;
+}
+
+.goal{
+  text-wrap: wrap;
+  width: 50%;
+}
+
+.launch{
+  background-color: rgba(179, 175, 175, 0);
+  border: none;
+}
+
+.mainheader{
+  background-color: rgba(179, 175, 175, 0.243);
+  padding: 0;
+}
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
 
-  a:hover {
-    color: #f7f7fa;
-  }
-
-  button {
-    background-color: #f9f9f9;
-  }
-}
 

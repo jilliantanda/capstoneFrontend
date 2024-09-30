@@ -30,6 +30,7 @@ const Show = (props) => {
 
   return (
     <>
+        <Header />
       <h3>Goal: {goal.title}</h3>
       <h3>Description: {goal.description}</h3>
       <h3>Resources: {goal.resources}</h3>

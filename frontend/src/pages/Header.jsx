@@ -1,31 +1,46 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import Offcanvas from 'react-bootstrap/Offcanvas';
 
 
 function Header(props) {
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" className="mainheader">
       <Container>
-        <Navbar.Brand href="/">DisArray</Navbar.Brand>
+      <Button variant="light" className="launch" onClick={handleShow}>
+      <img src="https://i.imgur.com/JKuHfyG.png" />
+      </Button>
+
+      <Offcanvas show={show} onHide={handleClose}>
+        <Offcanvas.Header closeButton>
+          <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body>
+        <Nav.Link href="/dashboard"><h3>Dashboard</h3></Nav.Link>
+          Some text as placeholder. In real life you can have the elements you
+          have chosen. Like, text, images, lists, etc.
+        </Offcanvas.Body>
+      </Offcanvas>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/features">Features</Nav.Link>
-            <Nav.Link href="/about">About</Nav.Link>
-            <NavDropdown title="Explore More" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/learnmore">Learn more</NavDropdown.Item>
-              <NavDropdown.Item href="/download">
-                Sign Up
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
-          </Nav>
+            <Nav.Link href="/goals">Goals</Nav.Link>
+            <Nav.Link href="/newgoal">New Goal</Nav.Link>
+            <Nav.Link href="/resources">Resources</Nav.Link>
+           
+          </Nav> 
+          <Navbar.Collapse className="justify-content-end">
+          <Navbar.Text>
+            Signed in as: <a href="#login">enteruserhere</a>
+          </Navbar.Text>
+        </Navbar.Collapse>
         </Navbar.Collapse>
       </Container>
     </Navbar>
@@ -36,32 +51,3 @@ export default Header;
 
 
 
-// const HeaderNav = (props) => {  return (
-//     <div>
-//       <nav>
-//         <div class="nav-wrapper">
-      
-//           <ul id="nav-mobile" class="right">
-//             <li>
-//               <a href="/">Logo</a>
-//             </li>
-//             <li>|</li>
-//             <li>
-//               <a href="/goals">Goals</a>
-//             </li>
-//             <li>|</li>
-//             <li>
-//               <a href="/newgoal">New Goal</a>
-//             </li>
-//             <li>|</li>
-//             <li>
-//               <a href="collapsible.html">Resources</a>
-//             </li>
-//           </ul>
-//         </div>
-//       </nav>
-//     </div>
-//   );
-// };
-
-// export default HeaderNav;

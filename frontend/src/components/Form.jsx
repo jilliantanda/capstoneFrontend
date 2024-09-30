@@ -1,6 +1,6 @@
 import { useState, useNavigate } from "react";
 import "./Form.css";
-
+import Header from "./Header";
 const Form = (props) => {
   const [newForm, setNewForm] = useState({
     title: "",
@@ -8,7 +8,7 @@ const Form = (props) => {
     resources: "",
     active: Boolean,
   });
-
+ 
   const handleChange = (event) => {
     setNewForm({ ...newForm, [event.target.name]: event.target.value });
   };
@@ -22,11 +22,14 @@ const Form = (props) => {
       resources: "",
       active: Boolean,
     });
+   
   };
   return (
+  
     <div>
+      <Header />
       <h1 className="form-header"> New Goal:</h1>
-      <form onSubmit={handleSubmit} className="add-player-form">
+      <form onSubmit={handleSubmit}>
         <input
           type="text"
           value={newForm.title}
@@ -59,7 +62,11 @@ const Form = (props) => {
           onChange={handleChange}
         /> */}
         <br></br>
-        <input type="submit" value="Add Goal" className="button-text" />
+        <input 
+        type="submit" 
+        value="Add Goal" 
+        className="button-text"  
+         />
       </form>
     </div>
   );
