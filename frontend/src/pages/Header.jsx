@@ -4,11 +4,11 @@ import Navbar from 'react-bootstrap/Navbar';
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import { doSignOut } from '../firebase/auth';
 
 
 function Header(props) {
     const [show, setShow] = useState(false);
-
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
   return (
@@ -37,12 +37,19 @@ function Header(props) {
            
           </Nav> 
           <Navbar.Collapse className="justify-content-end">
+          
           <Navbar.Text>
-            Signed in as: <a href="#login">enteruserhere</a>
+            Signed in as: <a href="#login">enteruserhere</a>         
+    
           </Navbar.Text>
+  
+          
+
         </Navbar.Collapse>
         </Navbar.Collapse>
+       <Button onClick={() => { doSignOut.then(() => {Navigate('/')})}}>Sign Out</Button>
       </Container>
+       
     </Navbar>
   );
 }

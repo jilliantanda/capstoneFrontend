@@ -25,7 +25,7 @@ const Dashboard = (props) => {
           </h5>
 <br></br>
           <div classname="btns">
-            <Button href="/download" variant="secondary" size="med">
+            <Button href="/signup" variant="secondary" size="med">
             Sign Up
             </Button>{" "}
             <Button variant="secondary" size="med">

@@ -8,10 +8,15 @@ import Features from "./Features.jsx";
 import About from "./About.jsx";
 import LearnMore from "./LearnMore.jsx";
 import Download from "./Download.jsx";
+import Login from "./Login.jsx";
+
+
+
 
 const Home = (props) => {
   const [goals, setGoals] = useState(null);
   const URL = "http://localhost:4000/goals/";
+
 
   const getGoals = async () => {
     try {
@@ -56,6 +61,7 @@ const Home = (props) => {
     getGoals();
   }, []);
 
+
   return (
     <main>
       <Routes>
@@ -63,7 +69,9 @@ const Home = (props) => {
         <Route path="/features" element={<Features />} />
         <Route path="/about" element={<About />} />
         <Route path="/learnmore" element={<LearnMore />} />
-        <Route path="/download" element={<Download />} />
+        <Route path="/signup" element={<Download />} />
+        <Route path="/login" element={<Login />} />
+   
 
         {/* <Route path="/resources" element={<Resources/> } /> */}
         <Route path="/goals" element={<Index goals={goals} />} />

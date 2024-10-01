@@ -18,8 +18,8 @@ function DashNav() {
             <Nav.Link href="/features">Features</Nav.Link>
             <NavDropdown title="Explore More" id="basic-nav-dropdown">
               <NavDropdown.Item href="/learnmore">Learn more</NavDropdown.Item>
-              <NavDropdown.Item href="/download">Sign Up</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+              <NavDropdown.Item href="/signup">Sign Up</NavDropdown.Item>
+              <NavDropdown.Item href="/login">Log In</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">
                 Separated link

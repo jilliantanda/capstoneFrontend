@@ -3,6 +3,8 @@ import "./Signup.css";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 
+
+
 const LoginSignup = () => {
   return (
     <>
@@ -18,9 +20,8 @@ const LoginSignup = () => {
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label>Username</Form.Label>
-              <Form.Control size="lg" type="email" placeholder="Enter username" />
+              <Form.Control size="lg" type="text" placeholder="Enter username" />
               <Form.Text className="text-muted">
-                This name will be displayed on your dashboard
               </Form.Text>
             </Form.Group>
             <Form.Group className="mb-4" controlId="formBasicPassword">
@@ -40,31 +41,6 @@ const LoginSignup = () => {
           </Form.Group> */}
             <Button variant="primary" type="submit">
               Create Account
-            </Button>
-          </Form>
-        </div>
-        <div className="signin">
-          <div>
-            <img src="https://i.imgur.com/MfHAsXS.png"></img>
-          </div>
-          <Form>
-            <Form.Group className="mb-3" controlId="formBasicEmail">
-              <Form.Label>Email address</Form.Label>
-              <Form.Control size="lg" type="email" placeholder="Enter email" />
-            </Form.Group>
-
-            <Form.Group className="mb-4" controlId="formBasicPassword">
-              <Form.Label>Password</Form.Label>
-              <Form.Control size="lg" type="password" placeholder="Password" />
-            </Form.Group>
-            <Form.Group className="mb-1" controlId="formBasicPassword">
-              <Form.Label>Forgot Password?</Form.Label>
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="formBasicPassword">
-              <Form.Label>Forgot Email?</Form.Label>
-            </Form.Group>
-            <Button variant="primary" type="submit">
-              Log In
             </Button>
           </Form>
         </div>

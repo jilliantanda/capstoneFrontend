@@ -8,11 +8,12 @@
 }
 
 .about1{
-    padding-left: 12%;
     display: flex;
     flex-direction: row;
-    gap: 12%;
+    gap: 20%;
+
 }
+
 .about1, .about2, .about3, .about5 {
   padding-top: 5%;
   font-size: 1.4em;
@@ -51,13 +52,13 @@
     padding-bottom: 3%;
     justify-content: center;
     max-height: 50%;
-
 }
 .about6{
     display: flex;
     align-items: center;
     max-width: 40%;
     padding: 6%;
+
 }
 .images{
     max-width: 50%;

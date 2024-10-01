@@ -1,9 +1,9 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import {  Link } from "react-router-dom";
 import Header from "./Header";
 import ListGroup from "react-bootstrap/ListGroup";
 
 function Index(props) {
+ 
   const loaded = () => {
     return (
       <div className="goalpage">
@@ -16,13 +16,13 @@ function Index(props) {
                 </Link>
               </ListGroup.Item>
             </ListGroup>
-
             <img src={goal.image} alt={goal.name} />
           </div>
         ))}
       </div>
     );
   };
+
   const loading = () => {};
 
   return (
