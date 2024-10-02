@@ -23,7 +23,7 @@ function Header(props) {
           <Offcanvas.Title>Offcanvas</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-        <Nav.Link href="/dashboard"><h3>Dashboard</h3></Nav.Link>
+        <Nav.Link href="/home"><h3>Dashboard</h3></Nav.Link>
           Some text as placeholder. In real life you can have the elements you
           have chosen. Like, text, images, lists, etc.
         </Offcanvas.Body>
@@ -33,7 +33,7 @@ function Header(props) {
           <Nav className="me-auto">
             <Nav.Link href="/goals">Goals</Nav.Link>
             <Nav.Link href="/newgoal">New Goal</Nav.Link>
-            <Nav.Link href="/resources">Resources</Nav.Link>
+            {/* <Nav.Link href="/resources">Resources</Nav.Link> */}
            
           </Nav> 
           <NavDropdown
@@ -41,7 +41,7 @@ function Header(props) {
             id="collapsible-nav-dropdown"
             className="justify-content-end"
           >
-            <NavDropdown.Item href="#action/3.1">Sign Out</NavDropdown.Item>
+            <NavDropdown.Item onClick={() => { doSignOut.then(() => {Navigate('/')})}}>Sign Out</NavDropdown.Item>
           </NavDropdown>
         </Navbar.Collapse>
        {/* <Button onClick={() => { doSignOut.then(() => {Navigate('/')})}}>Sign Out</Button> */}

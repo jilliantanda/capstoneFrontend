@@ -16,8 +16,8 @@ function Index(props) {
                 </Link>
               </ListGroup.Item>
             </ListGroup>
-            <img src={goal.image} alt={goal.name} />
           </div>
+          
         ))}
       </div>
     );

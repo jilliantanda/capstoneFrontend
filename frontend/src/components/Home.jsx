@@ -13,6 +13,7 @@ import UserHome from "./UserDashboard.jsx";
 
 
 
+
 const Home = (props) => {
   const [goals, setGoals] = useState(null);
   const URL = "http://localhost:4000/goals/";
@@ -72,8 +73,6 @@ const Home = (props) => {
         <Route path="/signup" element={<Download />} />
         <Route path="/login" element={<Login />} />
         <Route path="/home" element={<UserHome />} />
-
-        {/* <Route path="/resources" element={<Resources/> } /> */}
         <Route path="/goals" element={<Index goals={goals} />} />
         <Route path="/newgoal" element={<Forms createGoal={createGoal} />} />
         <Route

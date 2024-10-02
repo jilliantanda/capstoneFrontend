@@ -6,9 +6,10 @@ import Button from "react-bootstrap/Button";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import NavDropdown from "react-bootstrap/NavDropdown";
 
-function Header(props) {
-  const [show, setShow] = useState(false);
 
+
+function Header() {
+  const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
@@ -20,14 +21,14 @@ function Header(props) {
 
         <Offcanvas show={show} onHide={handleClose}>
           <Offcanvas.Header closeButton>
-            <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+            <Offcanvas.Title>Stay Motivated</Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body>
-            <Nav.Link href="/dashboard">
-              <h3>Dashboard</h3>
+            <Nav.Link href="/home">
+              <h3>Return Home</h3>
             </Nav.Link>
-            Some text as placeholder. In real life you can have the elements you
-            have chosen. Like, text, images, lists, etc.
+            
+          
           </Offcanvas.Body>
         </Offcanvas>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -35,10 +36,10 @@ function Header(props) {
           <Nav className="me-auto">
             <Nav.Link href="/goals">Goals</Nav.Link>
             <Nav.Link href="/newgoal">New Goal</Nav.Link>
-            <Nav.Link href="/resources">Resources</Nav.Link>
+            {/* <Nav.Link href="/resources">Resources</Nav.Link> */}
           </Nav>
           <NavDropdown
-            title="Signed in as: enteruserhere"
+            title="Signed in as:  "
             id="collapsible-nav-dropdown"
             className="justify-content-end"
           >

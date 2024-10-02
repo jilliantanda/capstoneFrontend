@@ -11,6 +11,7 @@
     display: flex;
     flex-direction: row;
     gap: 20%;
+    padding-left: 5%;
 
 }
 
@@ -52,6 +53,7 @@
     padding-bottom: 3%;
     justify-content: center;
     max-height: 50%;
+    gap: 5%;
 }
 .about6{
     display: flex;

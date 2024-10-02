@@ -6,38 +6,32 @@ import { doCreateUserWithEmailAndPassword } from '../firebase/auth'
 import { auth } from "../firebase/firebase"
 
 const LoginSignup = () => {
-  const [email, setEmail] = useState('');  // State for email
-  const [username, setUsername] = useState('');  // State for username
-  const [password, setPassword] = useState('');  // State for password
-  const [confirmPassword, setConfirmPassword] = useState('');  // State for confirm password
-  const [error, setError] = useState(null);  // State for error messages
+  const [email, setEmail] = useState(''); 
+  const [username, setUsername] = useState('');  
+  const [password, setPassword] = useState(''); 
+  const [confirmPassword, setConfirmPassword] = useState('');  
+  const [error, setError] = useState(null); 
 
 
   const handleSignup = async (event) => {
-    event.preventDefault();  // Prevent form from refreshing the page
-
-    // Check if passwords match before proceeding
+    event.preventDefault(); 
     if (password !== confirmPassword) {
       setError("Passwords do not match");
       return;
     }
 
     try {
-      // Call Firebase signup function
       const userCredential = await doCreateUserWithEmailAndPassword(email, username,password);
       console.log('User signed up:', userCredential.user);
       const user = auth.currentUser;
+      window.location.href = '/'
       if (user) {
         console.log("UID:", user.uid);
         console.log("Email:", user.email);
-        console.log("Display Name:", user.displayName);  // This will show the username
+        console.log("Display Name:", user.displayName);  
       }
-
-      // You can optionally update the user's display name (username) here
-      // Redirect or update UI as needed after successful signup
-      window.location.href = '/';  // Example redirect after signup
     } catch (error) {
-      setError(error.message);  // Set error message if signup fails
+      setError(error.message); 
     }
       console.log(auth.currentUser.displayName)
   };
@@ -57,7 +51,7 @@ const LoginSignup = () => {
                 type="email"
                 placeholder="Enter email"
                 value={email}
-                onChange={(e) => setEmail(e.target.value)}  // Update email state on input
+                onChange={(e) => setEmail(e.target.value)}  
               />
             </Form.Group>
 
@@ -68,7 +62,7 @@ const LoginSignup = () => {
                 type="text"
                 placeholder="Enter username"
                 value={username}
-                onChange={(e) => setUsername(e.target.value)}  // Update username state on input
+                onChange={(e) => setUsername(e.target.value)} 
               />
             </Form.Group>
 
@@ -79,7 +73,7 @@ const LoginSignup = () => {
                 type="password"
                 placeholder="Password"
                 value={password}
-                onChange={(e) => setPassword(e.target.value)}  // Update password state on input
+                onChange={(e) => setPassword(e.target.value)} 
               />
             </Form.Group>
 
@@ -90,7 +84,7 @@ const LoginSignup = () => {
                 type="password"
                 placeholder="Confirm Password"
                 value={confirmPassword}
-                onChange={(e) => setConfirmPassword(e.target.value)}  // Update confirm password state
+                onChange={(e) => setConfirmPassword(e.target.value)} 
               />
             </Form.Group>
 

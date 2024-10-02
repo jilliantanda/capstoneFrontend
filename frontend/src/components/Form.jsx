@@ -32,7 +32,7 @@ const Forms = (props) => {
       <Header />
       <br />
       <br />
-      <h1 className="form-header"> Add New Goal!</h1>
+      <h1 className="formheader"> Add New Goal!</h1>
 
       <div className="formcontainer">
       <div className="formstyle">
@@ -56,7 +56,7 @@ const Forms = (props) => {
               placeholder="Description"
               onChange={handleChange}
             />
-            <Form.Label>Title</Form.Label>
+            <Form.Label>Resources</Form.Label>
             <Form.Control
               type="text"
               value={newForm.resources}

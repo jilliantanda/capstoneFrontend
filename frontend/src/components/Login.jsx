@@ -75,8 +75,6 @@ const Login = () => {
         <DashNav />
         <br />
         <br />
-        <br />
-        <br />
         <h1>Returning User? Log back in!</h1>
         <div className="signin">
           <div>

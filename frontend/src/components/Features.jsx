@@ -62,7 +62,7 @@ const Features = (props) => {
             resources for the success in what you want to expand on!
           </p>
         </div>
-        <img src="https://i.imgur.com/DwHRN9x.jpeg" width="50%"></img>
+        <img src="https://i.imgur.com/DwHRN9x.jpeg" width="50%" height="50%"></img>
       </div>
       <br></br>
     </>

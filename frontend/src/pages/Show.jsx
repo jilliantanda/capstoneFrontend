@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import "./Show.css";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import Header from "./Header"
+import "./Show.css";
 
 const Show = (props) => {
   const params = useParams();
@@ -30,6 +31,7 @@ const Show = (props) => {
 
   return (
     <>
+    <div clsasName="goaldisplay">
         <Header />
       <h3>Goal: {goal.title}</h3>
       <h3>Description: {goal.description}</h3>
@@ -75,6 +77,7 @@ const Show = (props) => {
           DELETE
         </button> */}
       </Form>
+      </div>
     </>
   );
 };

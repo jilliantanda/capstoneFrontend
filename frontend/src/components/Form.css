@@ -1,3 +1,4 @@
+
 .formcontainer{
     display: flex;
     justify-content: center;
@@ -15,4 +16,10 @@
 
 .formcontainer>img{
     max-height: min-content;
+}
+
+.formheader{
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }

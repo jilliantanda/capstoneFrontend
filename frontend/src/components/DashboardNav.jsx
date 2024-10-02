@@ -6,7 +6,7 @@ import "./DashNav.css";
 
 function DashNav() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" className="navbar1">
       <Container>
         <Navbar.Brand href="/">
           <img src="https://i.imgur.com/JKuHfyG.png" />
@@ -17,7 +17,7 @@ function DashNav() {
             <Nav.Link href="/about">About</Nav.Link>
             <Nav.Link href="/features">Features</Nav.Link>
             <NavDropdown title="Explore More" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/learnmore">Learn more</NavDropdown.Item>
+              {/* <NavDropdown.Item href="/learnmore">Learn more</NavDropdown.Item> */}
               <NavDropdown.Item href="/signup">Sign Up</NavDropdown.Item>
               <NavDropdown.Item href="/login">Log In</NavDropdown.Item>
               {/* <NavDropdown.Divider /> */}

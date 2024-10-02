@@ -1,4 +1,6 @@
+
 .title {
+  
   padding-top: 2%;
   justify-content: center;
   margin: 0;
@@ -34,6 +36,7 @@
   background-color: rgb(212, 212, 212);
   text-align: left;
 }
+
 
 .div2 {
   max-width: 35%;
