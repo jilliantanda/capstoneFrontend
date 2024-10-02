@@ -12,8 +12,6 @@ import Login from "./Login.jsx";
 import UserHome from "./UserDashboard.jsx";
 
 
-
-
 const Home = (props) => {
   const [goals, setGoals] = useState(null);
   // const URL = "http://localhost:4000/goals/";
