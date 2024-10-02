@@ -2,14 +2,14 @@ import { useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import Index from "../pages/Index.jsx";
 import Show from "../pages/Show.jsx";
-import Form from "./Form";
+import Forms from "./Form";
 import Dashboard from "./Dashboard.jsx";
 import Features from "./Features.jsx";
 import About from "./About.jsx";
 import LearnMore from "./LearnMore.jsx";
 import Download from "./Download.jsx";
 import Login from "./Login.jsx";
-
+import UserHome from "./UserDashboard.jsx";
 
 
 
@@ -71,11 +71,11 @@ const Home = (props) => {
         <Route path="/learnmore" element={<LearnMore />} />
         <Route path="/signup" element={<Download />} />
         <Route path="/login" element={<Login />} />
-   
+        <Route path="/home" element={<UserHome />} />
 
         {/* <Route path="/resources" element={<Resources/> } /> */}
         <Route path="/goals" element={<Index goals={goals} />} />
-        <Route path="/newgoal" element={<Form createGoal={createGoal} />} />
+        <Route path="/newgoal" element={<Forms createGoal={createGoal} />} />
         <Route
           path="/goals/:id"
           element={

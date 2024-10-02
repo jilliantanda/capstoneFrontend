@@ -5,7 +5,7 @@ import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { doSignOut } from '../firebase/auth';
-
+import NavDropdown from "react-bootstrap/NavDropdown";
 
 function Header(props) {
     const [show, setShow] = useState(false);
@@ -36,18 +36,15 @@ function Header(props) {
             <Nav.Link href="/resources">Resources</Nav.Link>
            
           </Nav> 
-          <Navbar.Collapse className="justify-content-end">
-          
-          <Navbar.Text>
-            Signed in as: <a href="#login">enteruserhere</a>         
-    
-          </Navbar.Text>
-  
-          
-
+          <NavDropdown
+            title="Signed in as: enteruserhere"
+            id="collapsible-nav-dropdown"
+            className="justify-content-end"
+          >
+            <NavDropdown.Item href="#action/3.1">Sign Out</NavDropdown.Item>
+          </NavDropdown>
         </Navbar.Collapse>
-        </Navbar.Collapse>
-       <Button onClick={() => { doSignOut.then(() => {Navigate('/')})}}>Sign Out</Button>
+       {/* <Button onClick={() => { doSignOut.then(() => {Navigate('/')})}}>Sign Out</Button> */}
       </Container>
        
     </Navbar>

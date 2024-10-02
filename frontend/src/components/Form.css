@@ -1,0 +1,18 @@
+.formcontainer{
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+    gap: 10%;
+
+}
+
+.formstyle{
+    width: 30%;
+    border-style: solid;
+    border-radius: 5%;
+    border-color: rgba(128, 128, 128, 0.273);
+}
+
+.formcontainer>img{
+    max-height: min-content;
+}

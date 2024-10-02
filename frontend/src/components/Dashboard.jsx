@@ -24,11 +24,11 @@ const Dashboard = (props) => {
             grow as a developer.
           </h5>
 <br></br>
-          <div classname="btns">
+          <div>
             <Button href="/signup" variant="secondary" size="med">
             Sign Up
             </Button>{" "}
-            <Button variant="secondary" size="med">
+            <Button href="/login" variant="secondary" size="med">
               Log In
             </Button>
           </div>
