@@ -1,13 +1,15 @@
 import "./App.css";
 import Home from "./components/Home";
-
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   // const [count, setCount] = useState(0);
 
   return (
     <div className="App">
-         <Home />
+       <BrowserRouter>
+      <Home />
+    </BrowserRouter>
     </div>
   );
 }
