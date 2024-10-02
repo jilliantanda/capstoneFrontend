@@ -18,16 +18,17 @@ body {
 .goalpage{
   display: flex;
   flex-direction: column;
-  padding-left: 20%;
-  align-items: left;
+  align-items: center;
   background-color: rgba(183, 183, 183, 0);
   padding-top: 5%;
 }
 
 .goal{
+  align-items: center;
   text-wrap: wrap;
-  width: 50%;
-  padding-left: 5%;;
+  width: 40%;
+  
+
 }
 
 .launch{
