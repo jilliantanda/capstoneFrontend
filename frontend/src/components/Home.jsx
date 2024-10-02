@@ -16,8 +16,8 @@ import UserHome from "./UserDashboard.jsx";
 
 const Home = (props) => {
   const [goals, setGoals] = useState(null);
-  const URL = "http://localhost:4000/goals/";
-
+  // const URL = "http://localhost:4000/goals/";
+  const URL = "https://capstonebackend-1-tz2o.onrender.com/goals/";
 
   const getGoals = async () => {
     try {

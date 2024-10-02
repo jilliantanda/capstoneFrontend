@@ -17,17 +17,16 @@ function Header(props) {
       <Button variant="light" className="launch" onClick={handleShow}>
       <img src="https://i.imgur.com/JKuHfyG.png" />
       </Button>
-
       <Offcanvas show={show} onHide={handleClose}>
-        <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Offcanvas</Offcanvas.Title>
-        </Offcanvas.Header>
-        <Offcanvas.Body>
-        <Nav.Link href="/home"><h3>Dashboard</h3></Nav.Link>
-          Some text as placeholder. In real life you can have the elements you
-          have chosen. Like, text, images, lists, etc.
-        </Offcanvas.Body>
-      </Offcanvas>
+          <Offcanvas.Header closeButton>
+            <Offcanvas.Title>Stay Motivated</Offcanvas.Title>
+          </Offcanvas.Header>
+          <Offcanvas.Body>
+            <Nav.Link href="/home">
+              <h3>Return Home</h3>
+            </Nav.Link>
+          </Offcanvas.Body>
+        </Offcanvas>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">

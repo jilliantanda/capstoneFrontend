@@ -20,6 +20,7 @@ function DashNav() {
               {/* <NavDropdown.Item href="/learnmore">Learn more</NavDropdown.Item> */}
               <NavDropdown.Item href="/signup">Sign Up</NavDropdown.Item>
               <NavDropdown.Item href="/login">Log In</NavDropdown.Item>
+              <NavDropdown.Item href="/goals">Goals</NavDropdown.Item>
               {/* <NavDropdown.Divider /> */}
               {/* <NavDropdown.Item href="#action/3.4">
                 Separated link
